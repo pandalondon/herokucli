@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -euxo pipefail
+set -eux
 
 mkdir -p ~/.config/snapcraft
 set +x && echo "$SNAPCRAFT_MACAROON" | base64 --decode > ~/.config/snapcraft/snapcraft.cfg && set -x

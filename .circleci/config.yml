@@ -80,6 +80,8 @@ jobs:
   snap:
     docker:
       - image: snapcore/snapcraft:stable
+        environment:
+          LC_ALL: C.UTF-8
     steps:
       - checkout
       - run: ./scripts/snap
